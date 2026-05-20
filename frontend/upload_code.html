@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Code | AI Code Review</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Upload Code for Review</h2>
+
+        <div style="margin-bottom: 15px;">
+            <label for="fileInput" style="font-weight: 500;">Upload File: </label>
+            <input type="file" id="fileInput" accept=".py,.java,.c,.cpp,.js" style="margin-left: 10px;">
+        </div>
+
+        <textarea id="code" rows="10" placeholder="Paste your code here"></textarea>
+
+        <br><br>
+
+        <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Standard Input</h3>
+        <textarea id="stdinInput" rows="3"
+            placeholder="Enter standard input (stdin) here if your code requires input..."></textarea>
+
+        <br><br>
+
+        <div style="display: flex; gap: 15px;">
+            <button onclick="reviewCode()">Analyze Code</button>
+            <button onclick="runCode()" style="background-color: #4CAF50;">Run Code</button>
+        </div>
+
+        <pre id="runOutput"
+            style="background: #222; color: #0f0; padding: 15px; margin-top: 20px; border-radius: 5px; display: none; white-space: pre-wrap; font-family: monospace;"></pre>
+
+    </div>
+
+    <script src="js/upload_code.js"></script>
+
+</body>
+
+</html>

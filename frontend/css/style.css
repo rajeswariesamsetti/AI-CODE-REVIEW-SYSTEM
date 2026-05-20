@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #060606f8, #060606);
+    padding: 20px;
+}
+
+/* Main Card */
+
+.container {
+    width: 520px;
+    background: rgba(11, 221, 221, 0.637);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* Title */
+
+h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Inputs */
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Textarea for code */
+
+textarea {
+    height: 160px;
+    font-family: monospace;
+    resize: none;
+}
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #eee;
+    transform: translateY(-2px);
+}
+
+/* Links */
+
+p {
+    margin-top: 20px;
+    color: #eee;
+}
+
+a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message */
+
+#message {
+    margin-top: 15px;
+    color: #ffdede;
+    font-size: 14px;
+}
+
+/* Code Result Box */
+
+#result {
+    margin-top: 25px;
+    background: rgba(15, 23, 42, 0.85);
+    /* Deep slate blue */
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: left;
+    font-family: monospace;
+    max-height: 300px;
+    overflow: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Report Section */
+
+#report {
+    margin-top: 25px;
+    background: rgba(15, 23, 42, 0.85);
+    /* Deep slate blue */
+    color: #e2e8f0;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family: monospace;
+    line-height: 1.6;
+    text-align: left;
+    max-height: 420px;
+    overflow: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Issue Box */
+
+.issue {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #f87171;
+    border-radius: 6px;
+    color: #f1f5f9;
+}
+
+/* Success */
+
+.success {
+    color: #4caf50;
+    font-weight: 600;
+}
+
+/* Score */
+
+.score {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
